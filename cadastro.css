@@ -1,0 +1,154 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+header .logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #5e3a8b;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #5e3a8b;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.ativo {
+  color: #000;
+  font-weight: bold;
+}
+
+/* ===== CADASTRO ===== */
+.cadastro-container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #f4edff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.cadastro-container h1 {
+  color: #5e3a8b;
+  margin-bottom: 10px;
+}
+
+.cadastro-container p {
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.form-cadastro {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.form-cadastro label {
+  font-weight: bold;
+  color: #5e3a8b;
+}
+
+.form-cadastro input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.form-cadastro input:focus {
+  border-color: #5e3a8b;
+  outline: none;
+}
+
+.btn-primary {
+  background-color: #5e3a8b;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #46296a;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+  background-color: #222;
+  color: #eee;
+  padding: 40px 80px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-container h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer-container ul {
+  list-style: none;
+}
+
+.footer-container ul li {
+  margin-bottom: 8px;
+}
+
+.footer-container ul li a {
+  text-decoration: none;
+  color: #ddd;
+  transition: color 0.3s ease;
+}
+
+.footer-container ul li a:hover {
+  color: #fff;
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+  color: #bbb;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+}
